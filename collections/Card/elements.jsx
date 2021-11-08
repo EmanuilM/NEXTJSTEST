@@ -6,7 +6,7 @@ import { SectionInnerHeading, SectionParagraph } from '../../components/Typograp
 
 export const StyleCard = styled(({ ...props }) => <section  {...props} />)`
     background : #F1F1F1;
-    height: 100px;
+    border : 3px solid transparent;
     margin-top : 10px;
     display: flex;
     align-items: center;
