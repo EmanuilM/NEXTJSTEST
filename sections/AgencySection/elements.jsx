@@ -1,16 +1,33 @@
 import styled from "styled-components";
 
-export const StyleSectionWrapper = styled(({ ...props }) => (
+export { Card } from "~/collections";
+import { SectionHeading, SectionSubheading } from "~/components";
+
+export const StyledHeading = styled(({ ...props }) => (
+  <SectionHeading {...props} />
+))`
+  text-align: center;
+`;
+
+export const StyledSubHeading = styled(({ ...props }) => (
+  <SectionSubheading {...props} />
+))`
+  text-align: center;
+`;
+
+export const StyledSectionWrapper = styled(({ ...props }) => (
   <section {...props} />
 ))`
   text-align: center;
 `;
 
-export const StyleImageWrapper = styled(({ ...props }) => <div {...props} />)`
+export const StyledBackgroundWrapper = styled(({ ...props }) => (
+  <div {...props} />
+))`
   position: absolute;
   z-index: -1;
 `;
-export const StyleSectionContent = styled(({ ...props }) => (
+export const StyledSectionContent = styled(({ ...props }) => (
   <section {...props} />
 ))`
   display: flex;
@@ -25,9 +42,15 @@ export const StyleSectionContent = styled(({ ...props }) => (
   }
 `;
 
-export const StyleCardsWrapper = styled(({ ...props }) => (
+export const StyledCardsWrapper = styled(({ ...props }) => (
   <section {...props} />
 ))`
   width: 400px;
   padding: 20px;
+`;
+
+export const StyledImageWrapper = styled(({ ...props }) => <div {...props} />)`
+  position: relative;
+  width: 300px;
+  height: 500px;
 `;
