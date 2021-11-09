@@ -8,10 +8,6 @@ import {
   StyledSubHeading,
   Card,
 } from "./elements";
-import {
-  StyledSectionHeading,
-  StyledSectionSubheading,
-} from "../../components/Typography/elements";
 
 import { BsFillBriefcaseFill } from "react-icons/bs";
 import { FaSearch } from "react-icons/fa";
