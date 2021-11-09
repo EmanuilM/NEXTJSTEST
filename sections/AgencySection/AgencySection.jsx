@@ -7,11 +7,12 @@ import {
   StyledHeading,
   StyledSubHeading,
   Card,
+  BsFillBriefcaseFill,
+  FaSearch,
+  GiPitchfork,
 } from "./elements";
 
-import { BsFillBriefcaseFill } from "react-icons/bs";
-import { FaSearch } from "react-icons/fa";
-import { GiPitchfork } from "react-icons/gi";
+
 
 import Image from "next/image";
 

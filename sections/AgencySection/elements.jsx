@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export { Card } from "~/collections";
+export { BsFillBriefcaseFill } from "react-icons/bs";
+export { FaSearch } from "react-icons/fa";
+export { GiPitchfork } from "react-icons/gi";
+
 import { SectionHeading, SectionSubheading } from "~/components";
 
 export const StyledHeading = styled(({ ...props }) => (
