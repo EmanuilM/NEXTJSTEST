@@ -1,4 +1,6 @@
-import { Hero , AgencySection } from "../sections";
+import { Hero, AgencySection } from "../sections";
+
+
 
 const heroProps = {
   image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
@@ -8,23 +10,50 @@ const heroProps = {
 };
 
 const agencyProps = {
-  heading: 'Managed agency selection',
-  subHeading: 'Strengthen your onboarding process',
+  heading: "Managed agency selection",
+  subHeading: "Strengthen your onboarding process",
   backgroundImage: {
-    src: '/img/background.png',
-    alt: 'backgroundImage',
-    width : 900,
-    height : 700
+    src: "/img/background.png",
+    alt: "backgroundImage",
+    width: 900,
+    height: 700,
   },
-  videoImage : {
-    src : '/img/video.png',
-    alt : 'videoImage',
-    width : 300,
-    height : 300
+  videoImage: {
+    src: "/img/video.png",
+    alt: "videoImage",
+    width: 300,
+    height: 300,
   },
- 
-
-}
+  cards: [
+    {
+      title: "Brief",
+      description: (
+        <p>
+          Complete <b>brief writing or simple guidance</b> on what to include ,
+          we've got you coverd.
+        </p>
+      ),
+    },
+    {
+      title: "Search",
+      description: (
+        <p>
+          In-dedpth agency search covering; <b>criteria matching</b>, door
+          knocking and due-dilligence vetting
+        </p>
+      ),
+    },
+    {
+      title: "Pitch",
+      description: (
+        <p>
+          Comprehensive pitch management, including comms , diary management and{" "}
+          <b>pitch hosting</b>.
+        </p>
+      ),
+    },
+  ],
+};
 
 export default function Home() {
   return (
@@ -39,7 +68,7 @@ export default function Home() {
       </head>
       <div>
         <Hero {...heroProps} />
-        <AgencySection {...agencyProps} / >
+        <AgencySection {...agencyProps} />
         {/** Other sections */}
       </div>
     </>
